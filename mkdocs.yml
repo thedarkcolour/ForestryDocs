@@ -1,0 +1,6 @@
+theme:
+  name: readthedocs
+  nav_style: dark
+
+site_name: Forestry CE Documentation
+repo_url: https://github.com/thedarkcolour/ForestryDocs
