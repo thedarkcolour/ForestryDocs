@@ -5,41 +5,41 @@ important concepts that you'll want to be aware of when writing addons or KubeJS
 ## Species Type
 A species type is a type of organism. In base Forestry, there are three species types: Bee, Tree, and Butterfly.
 The species type defines the following traits:  
-- The karyotype
-- The life stages
-- The item used to represent the species
-- The research materials for members of the species
-- The possible mutations between different species within the species type
+* The karyotype
+* The life stages
+* The item used to represent the species
+* The research materials for members of the species
+* The possible mutations between different species within the species type
 
 ### Karyotype
 The karyotype defines the genome structure of a member of this species type.
 More specifically, the karyotype defines the following properties:  
-- All chromosomes a member's genome has
-- The default alleles for each chromosome
-- The alleles that each chromosome can take on
-- Whether a chromosome is _weakly inherited_'
+* All chromosomes a member's genome has
+* The default alleles for each chromosome
+* The alleles that each chromosome can take on
+* Whether a chromosome is _weakly inherited_'
 
 So, in the case of the Bee species type, the Karyotype defines the following:  
-- Every bee has the same 13 chromosomes
-- The allowed alleles for the `BeeChromosomes.SPEED` chromosomes are those found in `ForestryAlleles.DEFAULT_SPEEDS`
+* Every bee has the same 13 chromosomes
+* The allowed alleles for the `BeeChromosomes.SPEED` chromosomes are those found in `ForestryAlleles.DEFAULT_SPEEDS`
 
 ### Life Stage
 A life stage is a way to represent different forms of the same species type.
 A bee's default life stages:  
-- Drone
-- Princess
-- Queen
-- Larvae
+* Drone
+* Princess
+* Queen
+* Larvae
 
 A tree's default life stages:  
-- Sapling
-- Pollen
+* Sapling
+* Pollen
 
 A butterfly's default life stages:  
-- Butterfly
-- Caterpillar
-- Serum
-- Cocoon
+* Butterfly
+* Caterpillar
+* Serum
+* Cocoon
 
 ### Research Materials
 A research material is just an item that can be used to get hints in the Escritoire minigame while researching a species.
@@ -58,13 +58,13 @@ Specifically, the genome is a map of _chromosomes_ to _allele pairs_.
 
 ### Chromosome
 A chromosome is a property of an individual, used as a key in the individual's genome. Common chromosomes include:  
-- Bee Species
-- Tree Species
-- Fertility
-- Lifespan
-- Metabolism
-- Activity
-- \+ many others
+* Bee Species
+* Tree Species
+* Fertility
+* Lifespan
+* Metabolism
+* Activity
+* \+ many others
 
 Builtin chromosomes can be found in the 
 [`BeeChromosomes`](https://github.com/thedarkcolour/ForestryCE/blob/1.20.1/src/main/java/forestry/api/genetics/alleles/BeeChromosomes.java), 
