@@ -2,8 +2,21 @@
 Forestry's API is quite complex and can be difficult to understand at first. I've written a glossary of
 important concepts that you'll want to be aware of when writing addons or KubeJS scripts.
 
+---
+
+## Individual
+An individual, also referred to as an organism, is a living thing represented by a block, item, or entity.
+In Forestry, any bee, sapling, pollen, or butterfly is an individual. Leaf blocks on a tree are individuals,
+and entity forms of butterflies are also individuals. Being an individual means:
+
+- Can be mated with other individuals of the same species type to produce offspring
+- Can be analyzed using the Portable Analyzer
+- Can be researched using the Escritoire
+
+---
+
 ## Species Type
-A species type is a type of organism. In base Forestry, there are three species types: Bee, Tree, and Butterfly.
+A species type is a type of individual. In base Forestry, there are three species types: Bee, Tree, and Butterfly.
 The species type defines the following traits:  
 
 * The karyotype
@@ -58,8 +71,28 @@ a new, third species. Mutations define two different parent species, a resulting
 for that mutation to occur. Mutations may also specify mutation conditions, for example, the holiday bees require the
 date to be during a certain holiday, and other mutations might only be possible in certain biomes.
 
+---
+
+## Species
+A species is a variation of a species type. A species has:
+
+- Intrinsic traits, like colors, textures, temperature and humidity preferences, and a taxonomy
+- Default genome, even with alleles its parents did not have
+- Produce (ex. honey combs, cherries, silk cocoon)
+
+### Bee Species
+A bee species has:
+
+- Colors for outline, body, and stripes
+- Climate preferences for temperature and humidity
+- Produce, items it can produce while working in a hive
+- Specialties, items it can produce while in a jubilant state
+- Jubilance conditions, determines when a bee is in a jubilant state
+
+---
+
 ## Genome
-All organisms in Forestry have a genome, which stores the alleles of a bee.
+All individuals in Forestry have a genome, which stores the alleles of a bee.
 Specifically, the genome is a map of _chromosomes_ to _allele pairs_.
 
 ### Chromosome
